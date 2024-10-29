@@ -1,0 +1,8 @@
+jshunter
+.DS_Store
+node_modules/
+*.exe
+*.out
+*.log
+*.tmp
+.env
