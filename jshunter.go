@@ -30,6 +30,7 @@ var colors = map[string]string{
 var (
     //regex patterns
     regexPatterns = map[string]*regexp.Regexp{
+	"REACT_APP_ALGOLIA_SEARCH_KEY":                    regexp.MustCompile(`[a-f0-9]{32}`),
 	"google_api":                    regexp.MustCompile(`AIza[0-9A-Za-z-_]{35}`),
 	"firebase":                      regexp.MustCompile(`AAAA[A-Za-z0-9_-]{7}:[A-Za-z0-9_-]{140}`),
 	"google_captcha":                regexp.MustCompile(`6L[0-9A-Za-z-_]{38}|^6[0-9a-zA-Z_-]{39}$`),
